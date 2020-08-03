@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MapsDemo.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:MapsDemo.Controls"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:font="clr-namespace:MapsDemo.Helpers"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    ios:Page.UseSafeArea="True"
+    BackgroundColor="White"
+    NavigationPage.HasNavigationBar="False"
+    mc:Ignorable="d">
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <maps:Map
+            x:Name="map"
+            Grid.Row="0"
+            Grid.RowSpan="3"
+            VerticalOptions="FillAndExpand" />
+        <StackLayout
+            x:Name="stacknavigation"
+            Grid.Row="0"
+            BackgroundColor="White"
+            HeightRequest="60"
+            Opacity="0">
+            <StackLayout
+                Padding="15,0"
+                HorizontalOptions="Start"
+                VerticalOptions="CenterAndExpand">
+                <Image VerticalOptions="Center">
+                    <Image.Source>
+                        <FontImageSource
+                            FontFamily="Solid"
+                            Glyph="{x:Static font:FontIcons.Arrow}"
+                            Color="Black" />
+                    </Image.Source>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerNavigationArrow" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout
+            x:Name="stacksearch"
+            Grid.Row="1"
+            Padding="30,0">
+            <Frame
+                Padding="10,0"
+                CornerRadius="10"
+                HasShadow="False"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start">
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.Padding>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <On Platform="iOS" Value="0,10" />
+                                <On Platform="Android" Value="0" />
+                            </OnPlatform>
+                        </Grid.Padding>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="Solid"
+                                    Glyph="{x:Static font:FontIcons.Location}"
+                                    Size="20"
+                                    Color="Black" />
+                            </Image.Source>
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizerPin" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Entry
+                            Grid.Column="1"
+                            Focused="Entry_FocusedOrigen"
+                            Placeholder="Origen" />
+                    </Grid>
+                    <BoxView
+                        x:Name="boxline"
+                        Grid.Row="1"
+                        HeightRequest="1"
+                        Color="Black" />
+                    <StackLayout
+                        x:Name="search"
+                        Grid.Row="2"
+                        Padding="10,10">
+                        <StackLayout.Padding>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <On Platform="iOS" Value="10,10" />
+                                <On Platform="Android" Value="10,0" />
+                            </OnPlatform>
+                        </StackLayout.Padding>
+                        <Entry
+                            x:Name="entrydos"
+                            Focused="entrydos_FocusedDestino"
+                            Placeholder="Destino" />
+                    </StackLayout>
+
+                </Grid>
+            </Frame>
+        </StackLayout>
+
+        <controls:CustomPinView
+            x:Name="custompin"
+            Grid.Row="0"
+            Grid.RowSpan="3" />
+
+
+
+
+
+
+        <controls:PopupDialogView
+            x:Name="PopupDialog"
+            Grid.Row="2"
+            DialogMargin="0">
+            <ListView HasUnevenRows="True" VerticalScrollBarVisibility="Never">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" VerticalOptions="Center">
+                                    <Label Text="{Binding .}" />
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </controls:PopupDialogView>
+    </Grid>
+</ContentPage>

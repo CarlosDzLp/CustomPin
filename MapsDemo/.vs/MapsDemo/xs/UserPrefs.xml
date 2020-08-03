@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{D6203D61-9DA0-4F76-8D34-FDA1F599F4EA}|Default">
+  <MonoDevelop.Ide.ItemProperties.MapsDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9098DDD7-AC53-4206-8018-0BBC6C804B36" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MapsDemo/MainPage.xaml.cs">
+    <Files>
+      <File FileName="MapsDemo/MainPage.xaml" Line="86" Column="86" />
+      <File FileName="MapsDemo/Helpers/FontIcons.cs" Line="9" Column="34" />
+      <File FileName="MapsDemo/MainPage.xaml.cs" Line="111" Column="42" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MapsDemo" expanded="True">
+            <Node name="MapsDemo" expanded="True">
+              <Node name="Controls" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True">
+                <Node name="MainPage.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MapsDemo.Android FirstBuild="True" PreferredExecutionTarget="Android.SelectDevice" />
+</Properties>
