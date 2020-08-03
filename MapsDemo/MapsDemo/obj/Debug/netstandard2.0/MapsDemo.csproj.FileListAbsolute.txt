@@ -1,0 +1,15 @@
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/obj/Debug/netstandard2.0/MapsDemo.csprojAssemblyReference.cache
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/obj/Debug/netstandard2.0/Controls/CustomPinView.xaml.g.cs
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/obj/Debug/netstandard2.0/MapsDemo.AssemblyInfoInputs.cache
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/obj/Debug/netstandard2.0/MapsDemo.AssemblyInfo.cs
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/obj/Debug/netstandard2.0/MapsDemo.csproj.CoreCompileInputs.cache
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/obj/Debug/netstandard2.0/MapsDemo.dll
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/obj/Debug/netstandard2.0/ref/MapsDemo.dll
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/obj/Debug/netstandard2.0/MapsDemo.pdb
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/bin/Debug/netstandard2.0/MapsDemo.deps.json
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/bin/Debug/netstandard2.0/MapsDemo.dll
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/bin/Debug/netstandard2.0/ref/MapsDemo.dll
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/bin/Debug/netstandard2.0/MapsDemo.pdb
+/Users/carlosdiaz/Projects/MapsDemo/MapsDemo/obj/Debug/netstandard2.0/XamlC.stamp
